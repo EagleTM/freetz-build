@@ -17,3 +17,6 @@ HOWTO setup a build environment to build a freetz image for FRITZ!Box home route
     cd trunk
     make menuconfig
 
+    # If you're running on a single CPU core, make sure to set
+    # "Build system options" -> "Number of jobs to run simultaneously" to 1
+    # or FREETZ_JLEVEL=1 in the config file
